@@ -19,7 +19,16 @@ public class Isprime {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPrime(23));
+        int primeCount = 0;
+        for(int i = 1; i<100; i++){
+            if(isPrime(i)){
+                primeCount++;
+                System.out.println(i);
+            }
+            if(primeCount==3){
+                break;
+            }
+        }
     }
     
 }

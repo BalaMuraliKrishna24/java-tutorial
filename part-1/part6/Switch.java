@@ -37,13 +37,14 @@ public class Switch {
             case "October", "Novembemer", "December" :
                 return "4";
 
-            default:
-                return"none";
+            // default:
+            //     return"none";
         }
+        return "none";
     }
 
     public static void main(String[] args) {
         checkSwitch(5);
-        System.out.println(getQuarter("October"));
+        System.out.println(getQuarter("Octobr"));
     }
 }
